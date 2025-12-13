@@ -40,5 +40,8 @@ Client-side JSON injection 	      JSON.parse()
 DOM-data manipulation 	          element.setAttribute()
 Denial of service 	              RegExp() 
 
-
+#######################################################
+prevent DOM-based taint-flow vulnerabilities
+1.the most effective way to avoid DOM-based vulnerabilities is to avoid allowing data from any untrusted source to dynamically alter the value that is transmitted to any sink.
+2.If the desired functionality of the application means that this behavior is unavoidable, then defenses must be implemented within the client-side code. In many cases, the relevant data can be validated on a whitelist basis, only allowing content that is known to be safe.
 
